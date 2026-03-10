@@ -102,3 +102,111 @@ span {
 .paragrafo-section-2 p {
     font-size: 25px;
 }
+
+
+/* SECTION 03 */
+.section-03 {
+   background-image: url(imagens/architecture-3128917_1280.jpg);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding: 180px;
+   display: flex;
+   align-items: center; /*alinhamento vertical*/
+   justify-content: center; /*alinhamento horizontal*/ 
+}
+
+.btn {
+    padding: 7px;
+    background-color: black;
+    color: white;
+    width: 150px;
+    border: none;
+}
+
+/* Estelizando todas as div ao mesmo tempo */
+.section-04 div {
+    width: 300px; /*largura da caixa*/
+    height: 300px;/*altura da caixa*/
+    background-color: gray;/*cor de fundo*/
+    padding: 15px; /*preenchimento interno*/
+    text-align: center;/*alinhamento dos text*/
+}
+
+/* formatação da section 04 */
+.section-04 {
+    display: flex; /*deixando as div lado a lado*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: space-evenly;/*alinhamento horizontal*/
+    gap: 30px;/*espaço entre as caixa*/
+    padding: 60px;/*preenchimento interno das div*/
+}
+
+/* Estilização Div-02 | Segunda caixa */
+.caixa-02 {
+    background-image: url(imagens/halloween-959047_1280.jpg); /*inserindo img de fundo*/
+    background-position: center; /*posicionamento img*/
+    background-repeat: no-repeat; /*desativando a repetição*/
+    background-size: cover; /*preenchimento completo img*/
+    /* background-attachment: fixed; */
+}
+/* estilização título caixa 01 */
+.caixa-01 h2 {
+ font-size: 25px; /*Tamanho da letra*/
+ text-transform: uppercase; /*letra em caixa alta*/
+ margin-top: 30px; /*espaçamento superior*/
+}
+/* estilização do parágrafo caixa 01 */
+.caixa-01 p {
+    font-size: 20px; /*tamanho da letra*/
+    font-weight: 700; /*peso da font*/
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+/* estilização dos ícones */
+.fa-star, .fa-star-half {
+    font-size: 30px; /*tamanho dos icon*/
+    color: gold; /*cores dos icon*/
+}
+
+/* estilização caixa 03 - icon */
+.fa-github {
+    font-size: 70px; /*tamanho do icon*/
+    margin-top: 30px; /*espaçamento superior*/
+    margin-bottom: 15px; /*espaçamento inferior*/
+    color: black; /*cor do icon*/
+}
+
+.caixa-03 p {
+    font-size: 20px; /*tamanho da letra*/
+    font-weight: 700; /*peso da font*/
+}
+/* estilizando button caixa 03 */
+.caixa-03 button {
+    padding: 7px;/*preenchimento interno*/
+    background-color: black; /*cor de fundo*/
+    color: white; /*cor da letra*/
+    width: 130px; /*largura do button*/
+    border: none; /*removendo borda*/
+}
+
+
+footer {
+    background-color: black;
+    padding: 80px;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .fa-github, .fa-square-twitter, .fa-square-instagram {
+    color: yellow;
+    font-size: 40px;
+}
+
+.caixa-footer {
+    text-align: center;
+}
