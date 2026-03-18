@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-* {
-  scroll-behavior: smooth;
-  font-family: 'Courier New', Courier, monospace;
-  list-style: none;   
+* { /*estilização UNIVERSAL*/
+  scroll-behavior: smooth; /*Transição universal no Scrool de rolagem*/
+  font-family: 'Courier New', Courier, monospace; /*Família de fonte universal*/
+  list-style: none;/*Removendo estilo de lista UNIVERSAL*/ 
+  margin: 0; /*removendo os espaçamentos laterais e superiores*/
+  padding: 0; /*Desabilitando preenchimento aplicado por padrão*/
 }
+
+.whatsapp img{ /* alterando tamanho do icon whatsapp*/
+    width: 50px; /*largura do icon*/
+}
+.whatsapp img:hover{
+    width: 60px; /*largura do icon*/
+    transition: 0.8s;
+}
+.whatsapp { /*div que guarda o icon whatsaap*/
+    position: fixed; /*posicionamento fixo*/
+    right: 25px; /*posicionado à direita (25px)*/
+    bottom: 25px;/*posicionado à 25px do bottom*/
+}
+
 
 /* Estilizando o Header */
 header {
@@ -35,7 +51,7 @@ header img {
 
 /* ESTILIZANDO O TÍTULO */
 header h1 {
-    color: rgb(132, 32, 220);
+    color: rgb(223, 252, 3);
     /*cor da letra*/
     font-size: 36px;
     /*Tamanho da letra*/
@@ -54,11 +70,14 @@ header h1 {
 
 .list-menu ul li a {
     text-decoration: none; /*remoção do sublinhado (Decoração de texto: Nenhuma)*/
-    color: rgb(132, 32, 220);
+    color: yellow;
+    padding: 2px;
 }
 
 .list-menu ul li a:hover {
-  color: yellow;
+  color: rgb(190, 240, 9);
+  border-bottom: 2px solid yellow;
+  
 }
 /* FIM DO CABEÇALHO */
 
@@ -75,7 +94,17 @@ header h1 {
  flex-direction: row; /*Direção das caixas*/
  background-color: black; /*cor de fundo*/
  padding: 40px;/*preenchimento interno*/
- gap: 60px;  /*espaço entre as div*/    
+ gap: 60px;  /*espaço entre as div*/
+ scroll-margin-top: 135px;    
+}
+
+.div-01 img {
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.305);
+}
+
+.div-01 img:hover {
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.305);
+    transition: 0.8s;
 }
 
 .div-02 p {
@@ -109,6 +138,7 @@ span {
     justify-content: center;/*alinhamento horizontal*/
     flex-direction: column;/*direção das caixas*/
     text-align: center;/*alinhando texto ao centro*/
+    gap: 30px;
 }
 
 .paragrafo-section-2 h2 {
@@ -139,25 +169,29 @@ span {
     color: white;
     width: 150px;
     border: none;
-    
+    box-shadow: 3px 3px 10px white;
 }
 
 .btn:hover{
-    background-color: red;
+    background-color: rgb(29, 29, 29);
+    box-shadow: 4px 4px 15px white;
     color: white;
 }
+
+
 
 /* Estelizando todas as div ao mesmo tempo */
 .section-04 div {
     width: 300px; /*largura da caixa*/
-    height: 300px;/*altura da caixa*/
+    height: 310px;/*altura da caixa*/
     background-color: gray;/*cor de fundo*/
     padding: 15px; /*preenchimento interno*/
     text-align: center;/*alinhamento dos text*/
     box-shadow: 10px 10px 20px black;
 }
 .section-04 div:hover{
-    box-shadow: 15px 15px 25px black;
+    box-shadow: 20px 20px 30px black;
+    transition: 1s;
 }
 
 /* formatação da section 04 */
@@ -207,6 +241,7 @@ span {
 .caixa-03 p {
     font-size: 20px; /*tamanho da letra*/
     font-weight: 700; /*peso da font*/
+    margin-bottom: 30px;
 }
 /* estilizando button caixa 03 */
 .caixa-03 button {
@@ -215,6 +250,7 @@ span {
     color: white; /*cor da letra*/
     width: 130px; /*largura do button*/
     border: none; /*removendo borda*/
+    
 }
 
 
